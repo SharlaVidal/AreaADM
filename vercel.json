@@ -1,19 +1,9 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/node"
-      }
-    ],
-    "install": {
-      "ignore": ["**/*.test.js"],
-      "env": {
-        "SKIP_PREFLIGHT_CHECK": "true"
-      },
-      "additional-dependencies": [
-        "@mui/styled-engine-sc@6.0.0-alpha.18"
-      ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
     }
-  }
-  
+  ]
+}
